@@ -21,7 +21,7 @@ let playerOneActive = true;
 function play(currentSelector) {
   randomDice = Math.trunc(Math.random() * 6 + 1);
   // console.log(randomDice);
-  diceImg.src = `dice-${randomDice}.png`;
+  diceImg.src = `./diceImg/dice-${randomDice}.png`;
   let current = document.querySelector(currentSelector);
   if (randomDice !== 1) {
     current.textContent = Number(current.textContent) + randomDice;
@@ -73,7 +73,7 @@ function reset() {
   playerOneSection.className = 'player player--0 player--active';
   playerTwoSection.className = 'player player--1';
 
-  diceImg.src = 'dice-1.png';
+  diceImg.src = './diceImg/dice-1.png';
 }
 
 function closeModal() {
