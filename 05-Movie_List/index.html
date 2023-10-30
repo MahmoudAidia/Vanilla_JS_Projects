@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Working with Objects</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script-1.js" defer></script>
+    <script src="script-2.js" defer></script>
+  </head>
+  <body>
+    <section id="user-input" class="card">
+      <div class="control">
+        <label for="title" id="f-movie-label">Favorite Movie</label>
+        <input type="text" id="title" />
+        <small class="error-message-el">Input required</small>
+      </div>
+
+      <div class="inline-controls">
+        <div class="control">
+          <label for="extra-name">Extra Information (Name)</label>
+          <input type="text" id="extra-name" />
+          <small class="error-message-el">Input required</small>
+        </div>
+        <div class="control">
+          <label for="extra-value">Extra Information (Value)</label>
+          <input type="text" id="extra-value" />
+          <small class="error-message-el">Input required</small>
+        </div>
+      </div>
+
+      <button id="add-movie-btn">Add Movie</button>
+    </section>
+
+    <section id="filter" class="card">
+      <label for="filter-title">Filter by Title</label>
+      <input type="text" id="filter-title" />
+      <small class="error-message-el">Input required</small>
+      <button id="search-btn">Search</button>
+    </section>
+    <ul id="movie-list" class="card"></ul>
+  </body>
+</html>
